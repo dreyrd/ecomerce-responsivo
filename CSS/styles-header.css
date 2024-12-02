@@ -11,16 +11,15 @@ header{
     width: 33%;
     height: 100%;
     align-items: center;
-    padding-left: 30px;
 }
 
 .divisao-direita{
     display: flex;
-    flex-direction: column;
     width: 33%;
     height: 100%;
     align-items: center;
-    justify-content: center;
+    justify-content: end;
+    gap: 20px;
 }
 
 .divisao-centro{
@@ -34,6 +33,76 @@ header{
 /* Itens da divisao esquerda */
 .logo{
     height: 100%;
+    margin-left: 30px;
 }
 
 /* Itens da divisao central */
+
+.barra-pesquisa{
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    width: 80%;
+    height: 33px;
+    margin: 0;
+    border-radius: 2em;
+}
+
+.pesquisa{
+    margin-left: auto;
+    margin-right: 3%;
+    border: none;
+    width: 90%;
+}
+
+.pesquisa:focus{
+    outline: none;
+}
+
+.pesquisa::-webkit-search-cancel-button {
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+.botao-pesquisa{
+    all: unset;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    margin-left: auto;
+    height: 100%;
+}
+
+.lupa{
+    height: 80%;
+}
+
+/* Itens da divisao direita */
+
+.botao-mudar-fundo{
+    padding-left: 10px;
+    padding-right: 10px;
+    display: flex;
+    align-items: center;
+    background-color: #FF9233;
+    height: 50px;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 2px 0px;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.carrinho{
+    width: 50px;
+    transition: all 0.5s;
+    transform-origin: center;
+}
+
+.avatar{
+    width: 100px; 
+    height: 100px;
+}
