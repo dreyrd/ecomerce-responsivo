@@ -106,3 +106,46 @@ header{
     width: 100px; 
     height: 100px;
 }
+
+/* Responsividae */
+
+@media (max-width: 768px) {
+    header{
+        flex-direction: column;
+        height: auto;
+        align-items: center;
+    }
+
+    .divisao-esquerda{
+        height: 100px;
+        margin: 10px;
+    }
+
+    .divisao-centro{
+        width: 100%;
+    }
+
+    .divisao-direita{
+        width: 100%;
+        height: 100px;
+        gap: 10px;
+    }
+
+    .botao-mudar-fundo{
+        height: 35px;
+        width: 80px;
+    }
+
+    .carrinho{
+        width: 35px;
+    }
+
+    .avatar{
+        width: 40px;
+        height: 40px;
+    }
+}
+
+@media (min-width: 1024px) {
+
+}
