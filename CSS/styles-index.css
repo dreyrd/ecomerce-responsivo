@@ -1,0 +1,27 @@
+.secao-produtos{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: 500px;
+    align-items: center;
+    font-size: 30px;
+    margin-top: 30px;
+}
+
+.produtos-organizados{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.card-produto{
+    width: 254px;
+    height: 386px;
+    border: solid black 1px;
+    border-radius: 0.5em;
+    margin-top: auto;
+    margin-bottom: 5px;
+}

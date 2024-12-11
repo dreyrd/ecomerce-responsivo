@@ -46,6 +46,8 @@ header{
     height: 33px;
     margin: 0;
     border-radius: 2em;
+    padding-right: 10px;
+    padding-left: 5px;
 }
 
 .pesquisa{
@@ -119,6 +121,8 @@ header{
     .divisao-esquerda{
         height: 100px;
         margin: 10px;
+        width: 100%;
+        justify-content: center;
     }
 
     .divisao-centro{
@@ -144,8 +148,12 @@ header{
         width: 40px;
         height: 40px;
     }
+
+    .logo{
+        margin-left: 0;
+    }
 }
 
-@media (min-width: 1024px) {
+/* @media (max-width: 1024px) {
 
-}
+} */
