@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,22 +8,33 @@
 </head>
 <body>
 
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+          <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+
     <header>
 
         <section class="divisao-esquerda">
 
             <a href="#" class="logo">
-                <img src="./img/logoSZ.png" alt="Logo da Sadaz" class="logo">
+                <img src="../img/logoSZ.png" alt="Logo da Sadaz" class="logo">
             </a>
 
         </section>
 
         <section class="divisao-centro">
 
-            <form class="barra-pesquisa" action="./pages/produtos.html">
+            <form class="barra-pesquisa" action="../pages/produtos.html">
 
 
-                <button type="submit" class="botao-pesquisa"><img src="./img/lupa.png" alt="lupa" class="lupa"></button>
+                <button type="submit" class="botao-pesquisa"><img src="../img/lupa.png" alt="lupa" class="lupa"></button>
 
                 <input type="search" name="pesquisa" placeholder="O que deseja pesquisar?" class="pesquisa">
 
@@ -37,9 +48,9 @@
 
             <button class="botao-mudar-fundo" onclick="mudarFundo()">Mudar contraste</button>
 
-            <a href="./pages/carrinho.html"><img src="./img/carrinho.png" class="carrinho" alt="carrinho"></a>
+            <a href="../pages/carrinho.html"><img src="../img/carrinho.png" class="carrinho" alt="carrinho"></a>
 
-            <img src="./img/avatar.png" alt="avatar" class="avatar">
+            <img src="../img/avatar.png" alt="avatar" class="avatar">
 
 
         </section>
@@ -60,6 +71,172 @@
 
     </nav>
 
+
+    <main>
+        <section class="secao-produtos">
+
+            <div class="produtos-organizados">
+
+                <div class="card-produto" onclick="goToPage('produto.html')">
+                    <img src="../img/produtos/guitarra1.jpg" alt="Guitarra Tagima Stratocaster vermelha">
+
+                    <div class="textos">
+                        <p>Guitarra Tagima Stratocaster vermelha</p>
+                        <p class="preco">R$00,00</p>
+                    </div>
+                </div>
+
+                <div class="card-produto" onclick="goToPage('produto.html')">
+                    <img src="../img/produtos/guitarra2.jpg" alt="Guitarra Fender Stratocaster vintage">
+
+                    <div class="textos">
+                        <p>Guitarra Fender Stratocaster vintage</p>
+                        <p class="preco">R$00,00</p>
+                    </div>
+                </div>
+
+                <div class="card-produto" onclick="goToPage('produto.html')">
+                    <img src="../img/produtos/guitarra3.jpg" alt="Guitarra Fender Stratocaster preto e branco clássica">
+
+                    <div class="textos">
+                        <p>Guitarra Fender Stratocaster preto e branco clássica</p>
+                        <p class="preco">R$00,00</p>
+                    </div>
+                </div>
+                <div class="card-produto" onclick="goToPage('produto.html')">
+                    <img src="../img/produtos/guitarra4.jpg" alt="Guitarra Gibson Flying V preto">
+
+                    <div class="textos">
+                        <p>Guitarra Gibson Flying V preto</p>
+                        <p class="preco">R$00,00</p>
+                    </div>
+                </div>
+                <div class="card-produto" onclick="goToPage('produto.html')">
+                    <img src="../img/produtos/guitarra5.jpg" alt="Guitarra Ibanez Super Stratocaster preto">
+
+                    <div class="textos">
+                        <p>Guitarra Ibanez Super Stratocaster preto</p>
+                        <p class="preco">R$00,00</p>
+                    </div>
+                </div>
+
+
+                <div class="card-produto"  onclick="goToPage('produto.html')">
+                    <img src="../img/produtos/cabo1.jpg" alt="Cabo p10 Santo Angelo">
+
+                    <div class="textos">
+                        <p>Cabo p10 Santo Angelo</p>
+                        <p class="preco">R$00,00</p>
+                    </div>
+                </div>
+
+                <div class="card-produto" onclick="goToPage('produto.html')">
+                    <img src="../img/produtos/cabo2.jpg" alt="Cabos para pedaleira p10">
+
+                    <div class="textos">
+                        <p>Cabos para pedaleira p10</p>
+                        <p class="preco">R$00,00</p>
+                    </div>
+                </div>
+
+                <div class="card-produto" onclick="goToPage('produto.html')">
+                    <img src="../img/produtos/cabo3.jpg" alt="Cabo p10 guitarra amplificador pedaleira">
+
+                    <div class="textos">
+                        <p>Cabo p10 guitarra amplificador pedaleira</p>
+                        <p class="preco">R$00,00</p>
+                    </div>
+                </div>
+                <div class="card-produto" onclick="goToPage('produto.html')">
+                    <img src="../img/produtos/cabo4.jpg" alt="Cabo p10 Ninja">
+
+                    <div class="textos">
+                        <p>Cabo p10 Ninja</p>
+                        <p class="preco">R$00,00</p>
+                    </div>
+                </div>
+                <div class="card-produto" onclick="goToPage('produto.html')">
+                    <img src="../img/produtos/cabo5.jpg" alt="Cabo p10 Gorilla">
+
+                    <div class="textos">
+                        <p>Cabo p10 Gorilla</p>
+                        <p class="preco">R$00,00</p>
+                    </div>
+                </div>
+                
+                <div class="card-produto" onclick="goToPage('produto.html')">
+                    <img src="../img/produtos/amp1.jpg" alt="Amplificador Marshall 30W">
+
+                    <div class="textos">
+                        <p>Amplificador Marshall 30W</p>
+                        <p class="preco">R$00,00</p>
+                    </div>
+                </div>
+
+                <div class="card-produto" onclick="goToPage('produto.html')">
+                    <img src="../img/produtos/amp2.jpg" alt="Amplificador Fender 60W">
+
+                    <div class="textos">
+                        <p>Amplificador Fender 60W</p>
+                        <p class="preco">R$00,00</p>
+                    </div>
+                </div>
+
+                <div class="card-produto" onclick="goToPage('produto.html')">
+                    <img src="../img/produtos/amp3.jpg" alt="Amplificador Borne 60W">
+
+                    <div class="textos">
+                        <p>Amplificador Borne 60W</p>
+                        <p class="preco">R$00,00</p>
+                    </div>
+                </div>
+                <div class="card-produto" onclick="goToPage('produto.html')">
+                    <img src="../img/produtos/amp4.jpg" alt="Amplificador Meteoro 30W">
+
+                    <div class="textos">
+                        <p>Amplificador Meteoro 30W</p>
+                        <p class="preco">R$00,00</p>
+                    </div>
+                </div>
+                <div class="card-produto" onclick="goToPage('produto.html')">
+                    <img src="../img/produtos/amp5.jpg" alt="Amplificador Marshall 60W">
+
+                    <div class="textos">
+                        <p>Amplificador Marshall 60W</p>
+                        <p class="preco">R$00,00</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+
+
+    <footer>
+        <div class="informacoes-footer">
+
+            <section class="sobre-nos">
+
+                <a href="#">Sobre nós</a>
+                <a href="#">Fale conosco</a>
+
+            </section>
+            
+            <section class="contatos">
+
+                <p>+55 (99) 99999-9999</p>
+                <p>sadaz@sadaz.com</p>
+
+            </section>
+
+        </div>
+
+        <p class="direitos">© 2024 Andrey Rosa Dias</p>
+
+    </footer>
+
+    <script src="../script.js"></script>
     
 </body>
 </html>
