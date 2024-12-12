@@ -1,0 +1,1 @@
+Não consegui fazer todas as páginas responsivas devido ao fato que tive que pegar e reformular TODO o ecomerce que demorei 6 meses para fazer em 1 mês para o deixar semântico e hábil a se tornar responsivo
