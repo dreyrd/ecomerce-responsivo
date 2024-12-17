@@ -8,6 +8,7 @@
 </head>
 <body>
 
+    <!-- Quadrado do Vlibras para traduzir o site para libras -->
     <div vw class="enabled">
         <div vw-access-button class="active"></div>
         <div vw-plugin-wrapper>
@@ -19,8 +20,12 @@
         new window.VLibras.Widget('https://vlibras.gov.br/app');
     </script>
 
+
+    <!-- cabeçalho do site onde se encontra o icone, barra de pesquisa e botões para mudar conraste, acessar o carrinho e mostrar foto de pefil do usuario -->
     <header>
 
+
+        <!-- Parte esquerda do cabeçalho onde se localiza o icone do site -->
         <section class="divisao-esquerda">
 
             <a href="#" class="logo">
@@ -29,8 +34,11 @@
 
         </section>
 
+
+        <!-- divisao central do cabeçalho onde fica a barra de pesquisa -->
         <section class="divisao-centro">
 
+            <!-- essa classe serve apenas para agrupar a lupa e o input de forma que pareça que os dois são apenas um -->
             <form class="barra-pesquisa" action="./pages/produtos.html">
 
 
@@ -44,6 +52,8 @@
 
         </section>
 
+
+        <!-- parte direita do cabeçalho onde fica o botão para mudar cor de fundo, ir para o carinho e mostrar a foto de perfil do usuario -->
         <section class="divisao-direita">
 
             <button class="botao-mudar-fundo" onclick="mudarFundo()">Mudar contraste</button>
@@ -57,9 +67,12 @@
 
     </header>
 
+
+    <!-- aqui fica o menu de navegação com o link para as páginas de produtos -->
     <nav class="barra-navegacao">
         
         <ul>
+            <!-- esse onclick é responsavel por executar a função do javascript que manda para o arquivo dentro de pages especificado -->
             <li onclick="goToPage('produtos.html')">Fender</li>
             <li onclick="goToPage('produtos.html')">Tagima</li>
             <li onclick="goToPage('produtos.html')">Ibanez</li>
@@ -73,7 +86,9 @@
 
 
     <main>
-        
+
+
+        <!-- aqui começa a minha seção de produtos -->
 
         <section class="secao-produtos">
 
@@ -81,9 +96,11 @@
 
             <div class="produtos-organizados">
 
+                <!-- essa div é para criar o cartão para cada produto -->
                 <div class="card-produto" onclick="goToPage('produto.html')">
                     <img src="./img/produtos/guitarra1.jpg" alt="Guitarra Tagima Stratocaster vermelha">
 
+                    <!-- essa div de texos serve para fazer uma separação entre a imagem e o texto do produto -->
                     <div class="textos">
                         <p>Guitarra Tagima Stratocaster vermelha</p>
                         <p class="preco">R$00,00</p>
@@ -240,9 +257,12 @@
     </main>
 
     
+    <!-- aqui em o rodape do site com informações sobre o proprio -->
     <footer>
+        <!-- essa div serve para separar as informações de contato e sobre o site do texto de direitos autorais -->
         <div class="informacoes-footer">
 
+            <!-- essa é a seção que fica do lado esquerdo e mostra links de contato e sobre o site -->
             <section class="sobre-nos">
 
                 <a href="#">Sobre nós</a>
@@ -250,6 +270,7 @@
 
             </section>
 
+            <!-- essa seção fica ao lado direito e mostra as formas de entrar em contato com a empresa -->
             <section class="contatos">
 
                 <p>+55 (99) 99999-9999</p>
@@ -259,10 +280,12 @@
 
         </div>
 
+        <!-- aqui mostra os direitos autorais do site -->
         <p class="direitos">© 2024 Andrey Rosa Dias</p>
 
     </footer>
 
+    <!-- importacao do script para o site funcionar -->
     <script src="./script.js"></script>
 
 </body>
